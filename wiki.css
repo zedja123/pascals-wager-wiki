@@ -101,6 +101,8 @@ th { background: var(--raise); font-weight: 700; white-space: nowrap; }
 tbody tr:nth-child(even) td { background: color-mix(in srgb, var(--raise) 45%, transparent); }
 tbody tr:last-child td { border-bottom: 0; }
 tr:target td { background: var(--hl); }
+li[id], p[id], h2[id], h3[id] { scroll-margin-top: 1rem; }
+li:target, p:target { background: var(--hl); border-radius: 4px; box-shadow: 0 0 0 .35rem var(--hl); }
 
 .rail { min-width: 0; display: grid; gap: 1rem; align-content: start; }
 .rail section { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: .9rem 1rem; }
